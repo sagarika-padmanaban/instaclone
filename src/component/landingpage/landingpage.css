@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+}
+.landingpage-button{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 21px;
+    font-size: xx-large;
+    color: rgb(11, 135, 11);
+}
+.landingpage-heading{
+    color:rgb(11, 135, 11)
+}
+.landingpage-button:hover{
+    background-color:rgb(11, 135, 11);
+    color: white;
+}
+.container1{
+    padding-top:70px;
+}
+.welcomeheading{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    background-color:rgb(11, 135, 11);
+}

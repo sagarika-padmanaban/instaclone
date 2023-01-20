@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    border: 2px solid ;
+    border-radius: 5px;
+}
+.camera-icon{
+    margin-left: auto;
+    margin-right: 25px;
+    align-self: center;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 25px;
+    align-self: center;
+}
