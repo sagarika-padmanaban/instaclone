@@ -25,7 +25,7 @@ function Card(post){
             <span>{post.post.date}</span>
         </section>
         <section className="card-like">
-        {post.post.likes}likes
+        ❤️{post.post.likes}likes
         </section>
         <section className="card-description">
         {post.post.description}
