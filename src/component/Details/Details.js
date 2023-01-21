@@ -21,7 +21,7 @@ const Details = () => {
     formData.append("description", description)
     formData.append("likes", likes)
 
-    fetch("http://localhost:8080/api/post", {
+    fetch("https://insta-app-18wr.onrender.com/api/post", {
       method: 'POST',
       body: formData
     })
@@ -38,7 +38,7 @@ const Details = () => {
           <input type="text" placeholder='Location' value={location} onChange={(e)=>setlocation(e.target.value)}/>
           <input type="text" placeholder='Description'value={description}  onChange={(e)=>setdescritpion(e.target.value)}/>
 
-          <button type='submit' onClick={()=>navigate(-1)}>Post</button>
+          <button type='submit'onClick={()=>navigate(-1)}>Post</button>
         </form>
 
       </div>

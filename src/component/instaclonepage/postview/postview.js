@@ -4,7 +4,7 @@ import Header from "../header/header";
 function PostView() {
   const [posts , setposts] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:8080").then((res)=>{
+    fetch("https://insta-app-18wr.onrender.com").then((res)=>{
       return res.json();
     }).then((data)=>{
       console.log(data.data);

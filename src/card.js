@@ -17,7 +17,7 @@ function Card(post){
             <span><i className="fa fa-ellipsis-h" aria-hidden="true" id="ellipse"></i></span>
         </section>
         <section className="card-image">
-        <img src={`http://localhost:8080/image/${post.post.image}`} alt='saga'></img>
+        <img src={`https://insta-app-18wr.onrender.com/image/${post.post.image}`} alt='saga'></img>
         </section>
         <section className="card-action">
             <span><i className="fa fa-heart-o" aria-hidden="true"></i></span>
