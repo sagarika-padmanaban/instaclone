@@ -1,10 +1,10 @@
 
 import React,{useState} from 'react';
-import {useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 
 
 const Details = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [image, setimage] = useState('');
   const [author, setauthor] = useState('')
   const [location, setlocation] = useState('')
@@ -25,6 +25,11 @@ const Details = () => {
       method: 'POST',
       body: formData
     })
+    // setTimeout(()=>{
+    //    ()=>{
+    //     navigator(-1);
+    //    }
+    // },1000)
   }  
 
 
@@ -38,7 +43,7 @@ const Details = () => {
           <input type="text" placeholder='Location' value={location} onChange={(e)=>setlocation(e.target.value)}/>
           <input type="text" placeholder='Description'value={description}  onChange={(e)=>setdescritpion(e.target.value)}/>
 
-          <button type='submit'onClick={()=>navigate(-1)}>Post</button>
+          <button type='submit'>Post</button>
         </form>
 
       </div>
