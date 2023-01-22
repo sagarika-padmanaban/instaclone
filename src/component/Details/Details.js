@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react';
 // import {useNavigate} from "react-router-dom";
-
+import './Details.css'
 
 const Details = () => {
   // const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Details = () => {
     formData.append("description", description)
     formData.append("likes", likes)
 
-    fetch("https://insta-app-18wr.onrender.com/api/post", {
+    fetch("http://localhost:5050/api/post", {
       method: 'POST',
       body: formData
     })
@@ -31,20 +31,23 @@ const Details = () => {
     //    }
     // },1000)
   }  
-
+//  const handle =()=>{
+//   navigate('/instaclone')
+//  }
 
   return (
     <div>
-      <div>
+      <div className='form'>
+        <div className='div'>
+        <form onSubmit={uploadPost} className="inside-form">
+          <input type="file" name='image' onChange={(e)=>setimage(e.target.files[0])}/><br/>
+          <input type="text" placeholder='Author' value={author} onChange={(e)=>setauthor(e.target.value)}/><br/>
+          <input type="text" placeholder='Location' value={location} onChange={(e)=>setlocation(e.target.value)}/><br/>
+          <input type="text" placeholder='Description'value={description}  onChange={(e)=>setdescritpion(e.target.value)}/><br/>
 
-        <form onSubmit={uploadPost}>
-          <input type="file" name='image' onChange={(e)=>setimage(e.target.files[0])}/>
-          <input type="text" placeholder='Author' value={author} onChange={(e)=>setauthor(e.target.value)}/>
-          <input type="text" placeholder='Location' value={location} onChange={(e)=>setlocation(e.target.value)}/>
-          <input type="text" placeholder='Description'value={description}  onChange={(e)=>setdescritpion(e.target.value)}/>
-
-          <button type='submit'>Post</button>
+          <button type='submit' className='btn'>Post</button>
         </form>
+        </div>
 
       </div>
 

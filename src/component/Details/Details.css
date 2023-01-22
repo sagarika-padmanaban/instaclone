@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&display=swap');
+
+
+.form{
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgb(245, 0, 73),rgba(136, 0, 247, 0.829),rgb(230, 196, 9),red);
+}
+.div{
+    padding-top: 60px;
+}
+.inside-form{
+    margin: auto;
+    width: 30rem;
+    height: 15rem;
+    padding: 5rem;
+    border: 2px solid rgba(0,0,0,0.8);
+   background-image: linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+}
+.inside-form >input[type=text]{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-family: 'Kanit', sans-serif;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    
+}
+.btn{
+    font-family: 'Kanit', sans-serif;
+
+    background-image: linear-gradient(50deg,rgb(245, 0, 73),rgba(136, 0, 247, 0.829),rgb(230, 196, 9),red);
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s; 
+  margin-left: 13rem;
+    
+}
+input[type="file"]::file-selector-button {
+    border: 2px solid #050311;
+    padding: 0.8em 0.8em;
+    border-radius: 0.2em;
+    color: white;
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+
+    transition: 1s;
+    margin-left: 4rem;
+
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #ff0458;
+    border: 2px solid #ff0458;
+  }

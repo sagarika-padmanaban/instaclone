@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&display=swap');
+
+
+.main-div{
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgb(245, 0, 73),rgba(136, 0, 247, 0.829),rgb(230, 196, 9),red);
+}
+.main-inside-div{
+    padding-top: 60px;
+
+}
+.reg__btn{
+    font-family: 'Kanit', sans-serif;
+
+    background-image: linear-gradient(50deg,rgb(245, 0, 73),rgba(136, 0, 247, 0.829),rgb(230, 196, 9),red);
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s; 
+  margin-left: 13rem;
+    
+}
+.reg{
+    padding-top: 3rem;
+}
+.login__reg{
+    font-family: 'Kanit', sans-serif;
+
+    background-image: linear-gradient(50deg,rgb(245, 0, 73),rgba(136, 0, 247, 0.829),rgb(230, 196, 9),red);
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s; 
+  margin-left: 13rem;
+}
+/* span{
+    color: black;
+    font-family: 'Kanit', sans-serif;
+
+    font-size: medium;
+    margin-left: 11rem;
+
+} */
+.reg__name,.reg__email,.reg__password{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-family: 'Kanit', sans-serif;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    
+}
+.reg{
+    margin: auto;
+    width: 30rem;
+    height: 15rem;
+    padding: 5rem;
+    border: 2px solid rgba(0,0,0,0.8);
+   background-image: linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+}
