@@ -21,7 +21,7 @@ const Details = () => {
     formData.append("description", description)
     formData.append("likes", likes)
 
-    fetch("http://localhost:5050/api/post", {
+    fetch("https://insta-app-18wr.onrender.com/api/post", {
       method: 'POST',
       body: formData
     })
