@@ -26,7 +26,7 @@ function Card(post) {
                         </span>
                     </section>
                     <section className="card-image">
-                        <img src={`http://localhost:5050/api/image/${post?.post?.image}`} alt='saga'></img>
+                        <img src={`https://insta-app-18wr.onrender.com/api/image/${post?.post?.image}`} alt='saga'></img>
                     </section>
                     {/* <section className="card-action">
             <span>{post.post.date}</span>

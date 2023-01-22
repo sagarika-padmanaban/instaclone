@@ -18,7 +18,7 @@ const Login = () => {
   formData.append("password",password)
   console.log(email,password,formData);
 
-  const res = await fetch("http://localhost:5050/verify/login", {
+  const res = await fetch("https://insta-app-18wr.onrender.com/verify/login", {
     method: 'POST',
     headers:{
       "Content-type": "application/json",
@@ -34,7 +34,7 @@ const Login = () => {
   else if(response.status==="oopps!!"){
     setmsg("Check your password")
   }
-  else if(response.status==='Hurray'){
+  else{
     navigate('/instaclone')
   }
   }

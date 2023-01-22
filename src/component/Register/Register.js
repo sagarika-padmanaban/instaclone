@@ -19,7 +19,7 @@ const Register = () => {
   formData.append("email",email)
   formData.append("password",password)
 
-  const res = await fetch("http://localhost:5050/verify/register", {
+  const res = await fetch("https://insta-app-18wr.onrender.com/verify/register", {
     method: 'POST',
     headers:{
       "Content-type": "application/json",
