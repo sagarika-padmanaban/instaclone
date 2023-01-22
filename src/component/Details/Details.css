@@ -16,6 +16,10 @@
     border: 2px solid rgba(0,0,0,0.8);
    background-image: linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.8));
 }
+.details{
+  color: red;
+  font-family: 'Kanit', sans-serif;
+}
 .inside-form >input[type=text]{
     width: 100%;
   padding: 12px 20px;

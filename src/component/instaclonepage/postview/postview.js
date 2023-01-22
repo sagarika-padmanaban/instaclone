@@ -8,7 +8,7 @@ function PostView() {
       return res.json();
     }).then((data)=>{
       console.log(data.data);
-      setposts(data.data)
+      setposts(data.data.reverse())
     }).catch((err)=>{console.log(err)})
   },[])
     
