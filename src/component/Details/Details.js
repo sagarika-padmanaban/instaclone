@@ -18,7 +18,8 @@ const Details = () => {
         Please Fill your Details
       </div>)
     }
-    else {
+    else 
+    {
       const formData = new FormData();
       // Map => takes the data in the key value format 
       formData.append("image", image)
@@ -27,12 +28,15 @@ const Details = () => {
       formData.append("description", description)
       formData.append("likes", likes)
 
-      await fetch("https://insta-app-18wr.onrender.com/api/post", {
+      const resp = await fetch("https://insta-app-18wr.onrender.com/api/post", {
         method: 'POST',
         body: formData
       })
+      const response = await resp.json()
+      if(response.message==="Everything is fine"){
+        navigate("/instaclone")
 
-      navigate("/instaclone")
+      }
 
     }
 
