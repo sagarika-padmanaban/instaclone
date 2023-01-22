@@ -10,16 +10,16 @@ const Details = () => {
   const [location, setlocation] = useState('')
   const [description, setdescritpion] = useState("");
   const likes = Math.floor(Math.random() * 500);
-  const [msg, setmsg] = useState(<div></div>);
+  // const [msg, setmsg] = useState(<div></div>);
 
   const uploadPost = async (e) => {
-    if (image.length === 0 || author.length === 0 || location.length === 0 || description.length === 0) {
-      setmsg(<div className='details'>
-        Please Fill your Details
-      </div>)
-    }
-    else 
-    {
+    // if (image.length === 0 || author.length === 0 || location.length === 0 || description.length === 0) {
+    //   setmsg(<div className='details'>
+    //     Please Fill your Details
+    //   </div>)
+    // }
+    // else 
+    // {
       const formData = new FormData();
       // Map => takes the data in the key value format 
       formData.append("image", image)
@@ -28,18 +28,12 @@ const Details = () => {
       formData.append("description", description)
       formData.append("likes", likes)
 
-      const resp = await fetch("https://insta-app-18wr.onrender.com/api/post", {
+       fetch("https://insta-app-18wr.onrender.com/api/post", {
         method: 'POST',
         body: formData
       })
-      const response = await resp.json()
-      if(response.message==="Everything is fine"){
-        navigate("/instaclone")
 
-      }
-
-    }
-
+      navigate("/instaclone");
 
   }
 
@@ -52,7 +46,6 @@ const Details = () => {
             <input type="text" placeholder='Author' value={author} onChange={(e) => setauthor(e.target.value)} /><br />
             <input type="text" placeholder='Location' value={location} onChange={(e) => setlocation(e.target.value)} /><br />
             <input type="text" placeholder='Description' value={description} onChange={(e) => setdescritpion(e.target.value)} /><br />
-              {msg}
             <button type='submit' className='btn'>Post</button>
           </form>
         </div>
