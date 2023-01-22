@@ -1,10 +1,11 @@
 
 import React,{useState} from 'react';
-// import {useNavigate} from "react-router-dom";
+import { Navigate } from 'react-router-dom';
+import {useNavigate} from "react-router-dom";
 import './Details.css'
 
 const Details = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [image, setimage] = useState('');
   const [author, setauthor] = useState('')
   const [location, setlocation] = useState('')
@@ -25,6 +26,8 @@ const Details = () => {
       method: 'POST',
       body: formData
     })
+
+    navigate("/instaclone")
     // setTimeout(()=>{
     //    ()=>{
     //     navigator(-1);
